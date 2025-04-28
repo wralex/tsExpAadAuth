@@ -1,0 +1,48 @@
+{
+  "name": "tsexpaadauth",
+  "version": "1.0.0",
+  "description": "A sample Typescript Express project to use an Azure Tenant Authentication (App Registration) with MSAL Node.",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "dev": "npx tsx --watch ./src/app.ts",
+    "start": "node dist/app.js",
+    "sass": "sass --no-source-map sass/main.scss public/css/main.css",
+    "sass-watch": "sass --no-source-map --watch sass/main.scss public/css/main.css"
+  },
+  "keywords": [
+    "azure",
+    "authentication",
+    "typescript",
+    "express"
+  ],
+  "author": "William Alexander",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/cookie-parser": "^1.4.8",
+    "@types/express-handlebars": "^5.3.1",
+    "@types/express-session": "^1.18.1",
+    "@types/handlebars-helpers": "^0.5.6",
+    "@types/http-errors": "^2.0.4",
+    "@types/lodash": "^4.17.16",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.15.3",
+    "sass": "^1.87.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^3.5.1",
+    "@dotenvx/dotenvx": "^1.41.0",
+    "@types/express": "^5.0.1",
+    "axios": "^1.9.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.1",
+    "express-session": "^1.18.1",
+    "handlebars-helpers": "^0.10.0",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0"
+  }
+}
